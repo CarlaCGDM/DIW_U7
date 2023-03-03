@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script defer src="assets/js/app.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- Header: Logo sobre vídeo, título -->
+
+    <header class="site-header">
+
+        <!-- Vídeo -->
+
+        <div class="video-container">
+
+            <video autoplay muted loop>
+                <source src="assets/media/video/Tormenta_MP4.mp4" type="video/mp4" />
+                Su navegador no soporta contenido multimedia.
+            </video>
+
+        </div>
+
+        <!-- Logo (hace de título) -->
+
+        <h1>
+            <a href="http://stackoverflow.com">
+              <img class="logo" src="assets/media/img/Logo_PNG.png" alt="Robo Adventure" />
+            </a>
+        </h1>
+
+    </header>
+
+    <!-- Main: Descripción, carousel, banda sonora, personajes -->
+
+    <main>
+
+        <!-- Descripción y botón de Steam -->
+        <section id="section-1">
+
+            <h2>Adéntrate en la oscuridad...</h2>
+
+            <button class="cta-button">¡Consíguelo en Steam!</button>
+
+        </section>
+
+        <!-- Carrousel de imágenes con descripción -->
+        <section id="section-2">
+            <button class="slide-arrow" id="slide-arrow-prev">
+                &#8249;
+            </button>
+            <button class="slide-arrow" id="slide-arrow-next">
+                &#8250;
+            </button>
+              <ul class="slides-container" id="slides-container">
+                <li class="slide">
+                    <figure>
+                        <picture>
+                            <source media="(max-width: 599px)" srcset="assets/media/img/Fondo_1_Small.png" />
+                            <source media="(min-width:600px)" srcset="assets/media/img/Fondo_1_Medium.png" />
+                            <img src="assets/media/img/Fondo_1_Medium.png" alt="Fondo del nivel: Poblado Robot" />
+                        </picture>
+                        <figcaption>
+                            <h3>Poblado robot</h3>
+                            <p>El poblado robot ha sido arrasado por una misteriosa lluvia sin fin. ¿Lograrás hallar la causa y salvarlo?</p>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="slide">
+                    <figure>
+                        <picture>
+                            <source media="(max-width: 599px)" srcset="assets/media/img/Fondo_1_Small.png" />
+                            <source media="(min-width: 600px)" srcset="assets/media/img/Fondo_2_Medium.png" />
+                            <img src="assets/media/img/Fondo_1_Medium.png" alt="Fondo del nivel: Cueva Misteriosa" />
+                        </picture>
+                        <figcaption>
+                            <h3>Cueva misteriosa</h3>
+                            <p>Sólo los más valientes se atreverán a adentrarse...</p>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="slide">
+                    <figure>
+                        <picture>
+                            <source media="(max-width: 599px)" srcset="assets/media/img/Fondo_1_Small.png" />
+                            <source media="(min-width: 600px)" srcset="assets/media/img/Fondo_3_Medium.png" />
+                            <img src="assets/media/img/Fondo_1_Medium.png" alt="Fondo del nivel: Guarida del Villano" />
+                        </picture>
+                        <figcaption>
+                            <h3>Guarida del villano</h3>
+                            <p>¿Qué fuerza oscura reside en este lugar?</p>
+                        </figcaption>
+                    </figure>
+                </li>
+              </ul>
+        </section>
+
+        <!-- Banda sonora -->
+        <section id="section-3">
+
+            <header>
+                <h3>Banda sonora</h3>
+                <p>Disfruta de una banda sonora excepcional y unos efectos de sonido únicos.</p>
+            </header>
+
+            <div class="audio-container">
+                <h4>Gloomy Rain</h4>
+                <audio controls>
+                    <source src="assets/media/audio/Sonidos_Gloomy Rain_AAC.aac" type="audio/aac">
+                    <source src="assets/media/audio/Sonidos_Gloomy Rain_MP3.mp3" type="audio/mpeg">
+                    Your browser does not support the audio tag.
+                </audio>
+            </div>
+
+            <div class="audio-container">
+                <h4>Gloomy Rain</h4>
+                <audio controls>
+                    <source src="assets/media/audio/Sonidos_Gloomy Rain_AAC.aac" type="audio/aac">
+                    <source src="assets/media/audio/Sonidos_Gloomy Rain_MP3.mp3" type="audio/mpeg">
+                    Your browser does not support the audio tag.
+                </audio>
+            </div>
+
+            <div class="audio-container">
+                <h4>Gloomy Rain</h4>
+                <audio controls>
+                    <source src="assets/media/audio/Sonidos_Gloomy Rain_AAC.aac" type="audio/aac">
+                    <source src="assets/media/audio/Sonidos_Gloomy Rain_MP3.mp3" type="audio/mpeg">
+                    Your browser does not support the audio tag.
+                </audio>
+            </div>
+            
+        </section>
+
+        <!-- Imágenes del héroe y el villano -->
+        <section id="section-4">
+            <header>
+                <h3>Personajes inolvidables</h3>
+                <p>En toda historia hay un héroe y un villano, pero... ¿cuál es cada uno?</p>
+            </header>
+
+            <figure class="character-card">
+                
+                <figcaption>
+                    <h3>Robo</h3>
+                    <p>Gracias a su inseparable paraguas, Robo ha podido evitar oxidarse con la lluvia que cae sobre su poblado. ¿Hasta dónde llegará para detener la tormenta?</p>
+                </figcaption>
+                <picture>
+                    <source media="(max-width: 599px)" srcset="assets/media/img/Fondo_1_Small.png" />
+                    <source media="(min-width: 600px)" srcset="assets/media/img/Fondo_2_Medium.png" />
+                    <img src="assets/media/img/Fondo_1_Medium.png" alt="Fondo del nivel: Cueva Misteriosa" />
+                </picture>
+            </figure>
+
+            <figure class="character-card">
+                <picture>
+                    <source media="(max-width: 599px)" srcset="assets/media/img/Fondo_1_Small.png" />
+                    <source media="(min-width: 600px)" srcset="assets/media/img/Fondo_2_Medium.png" />
+                    <img src="assets/media/img/Fondo_1_Medium.png" alt="Fondo del nivel: Cueva Misteriosa" />
+                </picture>
+                <figcaption>
+                    <h3>Aquamagic</h3>
+                    <p>Este mago despiadado atormenta al poblado robot con una lluvia interminable. ¿Cuáles serán sus verdaderos motivos?</p>
+                </figcaption>
+            </figure>
+            
+        </section>
+    </main>
+
+    <!-- Footer: Enlace al repositorio con los créditos de las imágenes-->
+    <footer>
+        <p>Página creada por Nadina Carla Cardillo Garreta</p>
+        <small><a href="https://github.com/CarlaCGDM/videojuego-diw/blob/main/README.md">Assets de terceros</a></small>
+    </footer>
+
+</body>
+
+</html>

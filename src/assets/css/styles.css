@@ -1,0 +1,321 @@
+/* -------------------------------- CSS RESET -------------------------------- */
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-top: 0;
+}
+
+html,
+body,
+div {
+    margin: 0;
+    padding: 0;
+}
+
+/* ------------------------- LAYOUT BÁSICO -------------------------- */
+
+body {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+
+    
+    background-color: rgb(19, 19, 19);
+}
+
+.site-header {
+    background-color: rgb(94, 94, 255);
+    height: 500px;
+}
+
+main {
+    background-color: rgb(61, 61, 61);
+}
+
+footer {
+    height: 10vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color:rgb(29, 29, 29);
+    color: white;
+}
+
+.video-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.logo {
+
+    width: 400px;
+    height: auto;
+
+    position: absolute;
+    top: 100px;
+    left: calc(50% - 200px);
+
+}
+
+/* ---------------------------- SECCIONES -------------------------- */
+
+#section-1 {
+    height: 40vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+
+    background-color: rgb(29, 29, 29);
+    color: white;
+}
+
+#section-2 {
+    height: 60vh;
+    background-color: rgb(61, 61, 61);
+
+    margin: 1rem;
+    position: relative;
+}
+
+#section-3 {
+    color: white;
+    background-color: rgb(29, 29, 29);
+
+    padding: 3rem;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3vh;
+}
+
+#section-3 header {
+    text-align: center;
+    padding: 3rem;
+}
+
+#section-4 {
+    color: white;
+    background-color: rgb(19, 19, 19);
+
+    padding: 1rem;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3vh;
+}
+
+#section-4 header {
+    text-align: center;
+    padding: 3rem;
+}
+
+
+/* ----------------------- CAROUSEL --------------------- */
+
+.slides-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .slide-arrow {
+    position: absolute;
+    display: flex;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 4rem;
+    background-color: white;
+    border: none;
+    width: 2rem;
+    font-size: 3rem;
+    padding: 0;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 100ms;
+  }
+  
+  .slide-arrow:hover,
+  .slide-arrow:focus {
+    opacity: 1;
+  }
+  
+  #slide-arrow-prev {
+    left: 0;
+    padding-left: 0.25rem;
+    border-radius: 0 2rem 2rem 0;
+  }
+  
+  #slide-arrow-next {
+    right: 0;
+    padding-left: 0.75rem;
+    border-radius: 2rem 0 0 2rem;
+  }
+  
+  .slide {
+    width: 100%;
+    height: 100%;
+    flex: 1 0 100%;
+  }
+
+  .slide figure {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .slide figure picture {
+    height: 80%;
+    width: 100%;
+  }
+
+  .slide figure img {
+    width: 100%;
+    height: 100%;
+    
+    object-fit: cover;
+  }
+
+  .slide figure figcaption {
+    height: 20%;
+    width: 100%;
+    background-color: #000000;
+    color: white;
+    padding: 1rem;
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  
+  .slide:nth-child(1) {
+    background-color: #49b293;
+  }
+  
+  .slide:nth-child(2) {
+    background-color: #b03532;
+  }
+  
+  .slide:nth-child(3) {
+    background-color: #6a478f;
+    margin: 0;
+  }
+  
+  .slide:nth-child(4) {
+    background-color: #da6f2b;
+  }
+
+  /* ---------------- CLIPS DE AUDIO --------------*/
+
+  .audio-container {
+    width: 100%;
+  }
+
+  audio {
+    width: 100%;
+  }
+
+
+  /* ------------------- PERSONAJES ---------------------*/
+
+  .character-card {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    gap: 3vw;
+  }
+
+  .character-card picture {
+    width: 50%;
+  }
+
+  .character-card picture img {
+    width: 100%;
+  }
+
+  .character-card figcaption {
+    width: 50%;
+  }
+
+  /* -------------------- BOTONES ----------------- */
+
+  .cta-button {
+    
+    display: inline-block;
+    outline: 0;
+    cursor: pointer;
+    border: 2px solid #000;
+    border-radius: 15px;
+    color: #000;
+    background: rgb(153, 65, 54);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    padding: 12px 20px;
+    text-align:center;
+    transition-duration: .15s;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    
+  }
+
+  .cta-button:hover {
+    background: white;
+}
+  /* ------------------ RESPONSIVE ----------------- */
+
+  @media screen and (max-width: 1000px) {
+    body {
+      width: 80vw;
+    }
+    #section-1 {
+        height: 60vh;
+    }
+    #section-2 {
+        height: 60vh;
+    }
+
+  }
+
+
+  @media screen and (max-width: 600px) {
+    body {
+      width: 100vw;
+    }
+    .logo {
+    width: 300px;
+    left: calc(50% - 150px);
+    }
+    #section-1 {
+        height: 60vh;
+        padding-top: 5vh;
+    }
+  }

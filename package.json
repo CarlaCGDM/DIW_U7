@@ -1,0 +1,16 @@
+{
+  "name": "diw_u7",
+  "version": "1.0.0",
+  "description": "Trabajo de single page application responsiva para la clase de DIW",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev":"vite serve ./src/",
+    "build":"vite build"
+  },
+  "author": "Carla",
+  "license": "ISC",
+  "devDependencies": {
+    "vite": "^4.1.4"
+  }
+}
